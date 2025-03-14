@@ -14,6 +14,15 @@ export default function ChildRegisterScreen() {
   const [gender, setGender] = useState();
   const pickerRef = useRef<Picker<undefined>>(null);
 
+  const Database = async () => {
+    if (!name || !age) {
+      alert("Preencha os campos antes de prosseguir.");
+      return;
+    } else {
+      await router.push('/TreatmentQuestion')
+    }
+  };
+
   return (
     <View style={styles.container}>
       <View style={styles.viewBackButton}>
@@ -22,7 +31,7 @@ export default function ChildRegisterScreen() {
         </TouchableOpacity>
       </View>
       <View style={styles.viewTitle}>
-        <Text style={styles.title}>Informações do(a) seu(sua) filho(a)</Text>
+        <Text style={styles.title}>Informações do seu filho</Text>
       </View>
       <View style={styles.inputContainer}>
         <TextInput
@@ -94,7 +103,7 @@ export default function ChildRegisterScreen() {
       </View>
 
       <View style={styles.viewButton}>
-        <TouchableOpacity style={styles.button1} onPress={() => router.push('/TreatmentQuestion')}>
+        <TouchableOpacity style={styles.button1} onPress={Database}>
           <Text style={styles.buttonText}>Continuar</Text>
         </TouchableOpacity>
       </View>

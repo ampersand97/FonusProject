@@ -16,13 +16,13 @@ export default function TreatmentQuestion() {
         <Text style={styles.titleText}>O paciente já foi consultado por um fonoaudiólogo?</Text>
       </View>
       <View style={styles.viewButton}>
-        <TouchableOpacity style={styles.button2} activeOpacity={0.6} onPress={() => router.push('/ChildRegisterScreen')}>
+        <TouchableOpacity style={styles.button2} activeOpacity={0.6} onPress={() => router.push('/Questionnaire1')}>
           <Text style={styles.textButton2}>Sim</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.button2} activeOpacity={0.6} onPress={() => router.push('/ChildRegisterScreen')}>
+        <TouchableOpacity style={styles.button2} activeOpacity={0.6} onPress={() => router.push('/Questionnaire1')}>
           <Text style={styles.textButton2}>Não</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.button2} activeOpacity={0.6} onPress={() => router.push('/ChildRegisterScreen')}>
+        <TouchableOpacity style={styles.button2} activeOpacity={0.6} onPress={() => router.push('/Questionnaire1')}>
           <Text style={styles.textButton2}>Iniciou tratamento mas não finalizou</Text>
         </TouchableOpacity>
       </View>

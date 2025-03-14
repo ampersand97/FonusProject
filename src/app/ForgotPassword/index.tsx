@@ -16,7 +16,6 @@ export default function ForgotPasswordScreen() {
       alert("Por favor, insira seu e-mail.");
       return;
     }
-
     try {
       await sendPasswordResetEmail(auth, email);
       alert("E-mail de redefinição de senha enviado. Verifique sua caixa de entrada.");

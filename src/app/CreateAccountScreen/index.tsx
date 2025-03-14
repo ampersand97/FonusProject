@@ -34,8 +34,8 @@ export default function CreateAccountScreen() {
   };
 
   const Database = async () => {
-    if (!email || !password) {
-      alert("Preencha os campos antes de prosseguir");
+    if (!name || !age || !email || !password) {
+      alert("Preencha os campos antes de prosseguir.");
       return;
     } else {
       await handleSignUp();

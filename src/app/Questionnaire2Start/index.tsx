@@ -8,7 +8,7 @@ export default function Questionnaire2Start() {
   return (
     <View style={styles.container}>
       <View style={styles.viewBackButton}>
-        <TouchableOpacity style={styles.backButton} activeOpacity={0.6} onPress={() => router.push('/WelcomeScreen')}>
+        <TouchableOpacity style={styles.backButton} activeOpacity={0.6} onPress={() => router.push('/Questionnaire1')}>
           <Text style={styles.backButtonText}><MaterialCommunityIcons name="chevron-left" size={36} color="white" /></Text>
         </TouchableOpacity>
       </View>
