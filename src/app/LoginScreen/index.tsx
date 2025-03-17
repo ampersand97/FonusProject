@@ -17,11 +17,10 @@ export default function LoginScreen() {
   };
   const handleSignIn = async()=>{
     const result = await signIn(email,password);
-    if(result.message){
+    if(result.sucess){
         setEmail('');
         setPassword('');
         router.push('/MainScreen');
-                
     }
     else{
         alert(result.message);

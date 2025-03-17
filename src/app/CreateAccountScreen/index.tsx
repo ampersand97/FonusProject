@@ -20,17 +20,12 @@ export default function CreateAccountScreen() {
 
   const handleSignUp = async () => {
       const result = await signUp(email, password);
-      if (result.message) {
+      if (result.sucess) {
         alert(result.message);
-        setName("");
-        setAge("");
-        setEmail("");
-        setPassword("");
         router.push('/LoginScreen');
       } else {
         alert(result.message);
       }
-    
   };
 
   const Database = async () => {

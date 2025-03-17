@@ -16,7 +16,7 @@ export default function Questionnaire2Start() {
         <Text style={styles.titleText}>Responda o questionário a seguir sobre seu filho, para finalizarmos.</Text>
       </View>
       <View style={styles.viewButton}>
-        <TouchableOpacity style={styles.button2} activeOpacity={0.6} onPress={() => router.push('/ChildRegisterScreen')}>
+        <TouchableOpacity style={styles.button2} activeOpacity={0.6} onPress={() => router.push('/Questionnaire2')}>
           <Text style={styles.textButton2}>Avançar</Text>
         </TouchableOpacity>
       </View>
@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
   titleTextView: {
     justifyContent: "center",
     alignItems: "center",
-    marginTop: "50%", 
+    marginTop: "-50%", 
   },
   titleText: {
     color: "white",
@@ -56,7 +56,7 @@ const styles = StyleSheet.create({
   viewButton: {
     width: "100%",
     alignItems: "center",
-    marginBottom: "10%", 
+    marginBottom: "50%", 
   },
   viewBackButton: {
     width: "90%",

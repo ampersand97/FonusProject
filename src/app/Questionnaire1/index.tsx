@@ -24,7 +24,7 @@ export default function Questionnaire() {
         <Text style={styles.title}>Para prosseguirmos</Text>
       </View>
       <View style={styles.inputContainer}>
-      <Text style={styles.text}>Selecione as dificuldades do seu filho:</Text>
+        <Text style={styles.text}>Selecione as dificuldades do seu filho:</Text>
       <Picker
         ref={pickerRef}
         selectedValue={difficulties}
