@@ -9,7 +9,6 @@ const { width, height } = Dimensions.get("window");
 
 export default function CreateAccountScreen() {
   const [name, setName] = useState("");
-  const [age, setAge] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [passwordVisible, setPasswordVisible] = useState(true);
@@ -29,7 +28,7 @@ export default function CreateAccountScreen() {
   };
 
   const Database = async () => {
-    if (!name || !age || !email || !password) {
+    if (!name || !email || !password) {
       alert("Preencha os campos antes de prosseguir.");
       return;
     } else {
@@ -66,33 +65,6 @@ export default function CreateAccountScreen() {
             />
           }
           value={name}
-          theme={{
-            colors: {
-              outline: "#47065B",
-              background: "white",
-              primary: "#47065B",
-            },
-            roundness: 10,
-          }}
-        />
-        <TextInput
-          style={styles.inputText}
-          label="Idade"
-          onChangeText={(text) => setAge(text)}
-          mode="outlined"
-          right={
-            <TextInput.Icon
-              icon={({ size, color }) => (
-                <MaterialCommunityIcons
-                  name={age === "" ? "numeric" : "numeric"}
-                  size={size}
-                  color="#47065B"
-                />
-              )}
-            />
-          }
-          value={age}
-          keyboardType="numeric"
           theme={{
             colors: {
               outline: "#47065B",

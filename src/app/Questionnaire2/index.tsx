@@ -39,44 +39,53 @@ export default function Questionnaire2() {
         setQuestionText("Ele faz contato visual durante uma conversação?");
         break;
       case 3:
+        setTopic(2);
         setTopicsLeft(3);
         setQuestionText("Ele troca ou emite sons?");
         break;
       case 4:
+        setTopic(2);
         setTopicsLeft(4);
         setQuestionText("Ele costuma repetir palavras ou frases que ele ouve?");
         break;
       case 5:
-        setTopicsLeft(5);
         setTopic(3);
+        setTopicsLeft(5);
         setQuestionText("Ele utiliza gestos (como: apontar, acenar ou balançar a cabeça) para se comunicar?");
         break;
       case 6:
-        setTopicsLeft(6);
         setTopic(4);
+        setTopicsLeft(6);
         setQuestionText("Ele aprende novas palavras com facilidade?");
         break;
       case 7:
+        setTopic(4);
         setTopicsLeft(7);
         setQuestionText("Ele costuma inventar novas palavras ou adaptar palavras difíceis?");
         break;
       case 8:
+        setTopic(4);
         setTopicsLeft(8);
         setQuestionText("Ele canta músicas ou recita rimas infantis?");
         break;
       case 9:
+        setTopic(4);
         setTopicsLeft(9);
         setQuestionText("Ele consegue acompanhar falas?");
         break;
       case 10:
-        setTopicsLeft(0);
-        setTopic(0);
+        setTopic(5);
+        setTopicsLeft(10);
         setQuestionText("O fonoaudiólogo conseguiu dizer o que ele tinha?");
         break;
       case 11:
+        setTopic(5);
+        setTopicsLeft(10);
         setQuestionText("Alguma mudança na saúde, audição ou comportamento desde a última consulta?");
         break;
       case 12:
+        setTopic(5);
+        setTopicsLeft(10);
         setQuestionText("A socialização dele mudou de alguma forma desde que parou a terapia?");
         break;
       case 13:
@@ -179,7 +188,6 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   viewTitle: {
-    
   },
   title: {
     color: "#47065B",
