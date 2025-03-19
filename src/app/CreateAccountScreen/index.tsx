@@ -193,7 +193,7 @@ const styles = StyleSheet.create({
   viewBackButton: {
     width: "90%",
     alignItems: "flex-start",
-    marginTop: "0%",
+    marginTop: "5%",
   },
   backButton: {
     height: "10%",

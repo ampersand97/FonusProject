@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { StyleSheet, View, Text, Dimensions, TouchableOpacity } from "react-native";
+import { StyleSheet, Image, View, Text, Dimensions, TouchableOpacity } from "react-native";
 import { TextInput } from "react-native-paper";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { router } from "expo-router";
@@ -8,13 +8,9 @@ import { auth } from '../../../firebaseConfig';
 
 const { width, height } = Dimensions.get("window");
 
-export default function Questionnaire2() {
+export default function Questionnaire3() {
   const [question, setQuestion] = useState(1);
   const [questionText, setQuestionText] = useState(""); 
-  const [topic, setTopic] = useState(1);
-  const [topicsLeft, setTopicsLeft] = useState(4);
-  const [topicsLeftText, setTopicsLeftText] = useState("");
-  const [topicText, setTopicText] = useState("");
 
   const backQuestion = async () => {
     setQuestion(prevQuestion => prevQuestion - 1);
@@ -29,110 +25,21 @@ export default function Questionnaire2() {
       case 0:
         router.push('/TreatmentQuestion')
       case 1:
-        setTopic(1);
-        setTopicsLeft(1);
-        setQuestionText("Seu filho escuta quando você o chama?");
+        setQuestionText("O fonoaudiólogo conseguiu dizer o que ele tinha?");
         break;
       case 2:
-        setTopic(2);
-        setTopicsLeft(2);
-        setQuestionText("Ele faz contato visual durante uma conversação?");
+        setQuestionText("Alguma mudança na saúde, audição ou comportamento desde a última consulta?");
         break;
       case 3:
-        setTopic(2);
-        setTopicsLeft(3);
-        setQuestionText("Ele troca ou emite sons?");
+        setQuestionText("A socialização dele mudou de alguma forma desde que parou a terapia?");
         break;
       case 4:
-        setTopic(2);
-        setTopicsLeft(4);
-        setQuestionText("Ele costuma repetir palavras ou frases que ele ouve?");
-        break;
-      case 5:
-        setTopic(3);
-        setTopicsLeft(5);
-        setQuestionText("Ele utiliza gestos (como: apontar, acenar ou balançar a cabeça) para se comunicar?");
-        break;
-      case 6:
-        setTopic(4);
-        setTopicsLeft(6);
-        setQuestionText("Ele aprende novas palavras com facilidade?");
-        break;
-      case 7:
-        setTopic(4);
-        setTopicsLeft(7);
-        setQuestionText("Ele costuma inventar novas palavras ou adaptar palavras difíceis?");
-        break;
-      case 8:
-        setTopic(4);
-        setTopicsLeft(8);
-        setQuestionText("Ele canta músicas ou recita rimas infantis?");
-        break;
-      case 9:
-        setTopic(4);
-        setTopicsLeft(9);
-        setQuestionText("Ele consegue acompanhar falas?");
-        break;
-      case 10:
         router.push('/AnswerGathering');
         break;
       default:
-        setQuestionText("ERRO");
+        setQuestionText("");
     }
   }, [question]);
-
-  React.useEffect(() => {
-    switch (topic) {
-      case 1:
-        setTopicText("Audição");
-        break;
-      case 2:
-        setTopicText("Expressão Verbal");
-        break;
-      case 3:
-        setTopicText("Expressão Não-Verbal");
-        break;
-      case 4:
-        setTopicText("Fala");
-        break;
-      default:
-        setTopicText("ERRO");
-    }
-  }, [topic]);
-
-  React.useEffect(() => {
-    switch (topicsLeft) {
-      case 1:
-        setTopicsLeftText("1 de 1");
-        break;
-      case 2:
-        setTopicsLeftText("1 de 3");
-        break;
-      case 3:
-        setTopicsLeftText("2 de 3");
-        break;
-      case 4:
-        setTopicsLeftText("3 de 3");
-        break;
-      case 5:
-        setTopicsLeftText("1 de 1");
-        break;
-      case 6:
-        setTopicsLeftText("1 de 4");
-        break;
-      case 7:
-        setTopicsLeftText("2 de 4");
-        break;
-      case 8:
-        setTopicsLeftText("3 de 4");
-        break;
-      case 9:
-        setTopicsLeftText("4 de 4");
-        break;
-      default:
-        setTopicsLeftText("ERRO");
-    }
-  }, [topicsLeft]);
 
   return (
     <View style={styles.container}>
@@ -141,14 +48,11 @@ export default function Questionnaire2() {
           <Text style={styles.text}><MaterialCommunityIcons name="chevron-left" size={36} color="black" /></Text>
         </TouchableOpacity>
       </View>
-      <View style={styles.viewTitle}>
-        <Text style={styles.title}>{topicText}</Text>
-      </View>
-      <View style={styles.viewText}>
-        <Text style={styles.smallText}>{topicsLeftText}</Text>
-      </View>
       <View style={styles.viewText}>
         <Text style={styles.text}>{questionText}</Text>
+      </View>
+      <View style={styles.viewImage}>
+        <Image style={styles.image} source={require('../../../assets/Questionnaire3Image.png')} />
       </View>
       <View style={styles.inputContainer}>
         <View style={styles.viewButton}>
@@ -236,5 +140,17 @@ const styles = StyleSheet.create({
     width: "80%",
     alignItems: "center",
     marginTop: "40%",
+  },
+  viewImage: {
+    justifyContent: "center",
+    alignItems: "center",
+    width: "100%",
+    height: "60%",
+    marginTop: "-75%"
+  },
+  image: {
+    resizeMode: "contain",
+    width: "80%",
+    height: "50%",
   },
 });

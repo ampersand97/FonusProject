@@ -8,7 +8,7 @@ import { Picker } from "@react-native-picker/picker";
 
 const { width, height } = Dimensions.get("window");
 
-export default function Questionnaire() {
+export default function Questionnaire1() {
   const [difficulties, setDifficulties] = useState();
   const [conditions, setConditions] = useState();
   const pickerRef = useRef<Picker<undefined>>(null);
@@ -52,7 +52,7 @@ export default function Questionnaire() {
     </Picker>
      </View>
      <View style={styles.viewButton}>
-        <TouchableOpacity style={styles.button1} onPress={() => router.push('/Questionnaire2Start')}>
+        <TouchableOpacity style={styles.button1} onPress={() => router.push('/AnswerGathering')}>
           <Text style={styles.buttonText}>Avançar</Text>
         </TouchableOpacity>
       </View>

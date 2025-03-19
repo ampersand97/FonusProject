@@ -29,8 +29,8 @@ export default function WelcomeScreen() {
 
 const styles = StyleSheet.create({
   container: {
-    width:"100%",
-    height:"100%",
+    width: "100%",
+    height: "100%",
     backgroundColor: "#47065B",
     justifyContent: "center",
     alignItems: "center",
@@ -52,7 +52,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     width: "100%",
-    height:"60%"
+    height: "60%"
   },
   image: {
     resizeMode: "contain",
@@ -76,12 +76,12 @@ const styles = StyleSheet.create({
   button: {
     width: "80%",
     height: "250%",
-    backgroundColor:"#47065B",
+    backgroundColor: "#47065B",
     borderRadius: 25,
-    borderColor:"white",
+    borderColor: "white",
     borderWidth:2,
-    justifyContent:"center",
-    alignItems:"center",
+    justifyContent: "center",
+    alignItems: "center",
   },
   textButton:{
     color:"white",

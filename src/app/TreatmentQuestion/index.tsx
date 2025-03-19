@@ -19,10 +19,10 @@ export default function TreatmentQuestion() {
         <TouchableOpacity style={styles.button2} activeOpacity={0.6} onPress={() => router.push('/Questionnaire1')}>
           <Text style={styles.textButton2}>Sim</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.button2} activeOpacity={0.6} onPress={() => router.push('/Questionnaire1')}>
+        <TouchableOpacity style={styles.button2} activeOpacity={0.6} onPress={() => router.push('/Questionnaire2')}>
           <Text style={styles.textButton2}>Não</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.button2} activeOpacity={0.6} onPress={() => router.push('/Questionnaire1')}>
+        <TouchableOpacity style={styles.button2} activeOpacity={0.6} onPress={() => router.push('/Questionnaire3')}>
           <Text style={styles.textButton2}>Iniciou tratamento mas não finalizou</Text>
         </TouchableOpacity>
       </View>
