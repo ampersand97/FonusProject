@@ -8,7 +8,7 @@ export default function WelcomeScreen() {
     <View style={styles.container}>
       <View style={styles.titleTextView}>
         <Text style={styles.titleText1}>Bem vindo ao</Text>
-        <Text style={styles.titleText2}>TESTE</Text>
+        <Text style={styles.titleText2}>FONUS</Text>
       </View>
       <View style={styles.viewImage}>
         <Image style={styles.image} source={require('../../../assets/ImageFirstScreen.png')} />
