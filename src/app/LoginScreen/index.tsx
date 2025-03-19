@@ -109,7 +109,7 @@ const Database = async()=>{
           <Text style={styles.buttonText}>Entrar</Text>
         </TouchableOpacity>
         <TouchableOpacity onPress={()=> router.push('ForgotPassword')}>
-          <Text style={styles.forgotPasswordText}>Esqueci a senha</Text>
+          <Text style={styles.forgotPasswordText}>Esqueci minha senha</Text>
         </TouchableOpacity>
       </View>
     </View>
@@ -129,8 +129,7 @@ const styles = StyleSheet.create({
   },
   title: {
     color: "#47065B",
-    fontSize: width * 0.1,
-    fontWeight: "bold",
+    fontSize: 36,
   },
   inputContainer: {
     width: "100%",
@@ -139,10 +138,8 @@ const styles = StyleSheet.create({
     marginBottom: "20%",
   },
   inputText: {
-    width: width * 0.8,
-    height: height * 0.06,
-    marginTop: "5%",
-    marginBottom: "5%",
+    width: "80%",
+    marginTop: 10,
     backgroundColor: "#C6C6C6",
   },
   viewButton: {
@@ -152,7 +149,7 @@ const styles = StyleSheet.create({
   },
   button1: {
     width: "80%",
-    height: height * 0.07,
+    height: "20%",
     backgroundColor: "#47065B",
     borderRadius: 25,
     justifyContent: "center",
@@ -167,24 +164,18 @@ const styles = StyleSheet.create({
   viewBackButton: {
     width: "90%",
     alignItems: "flex-start",
-    marginTop: "40%",
+    marginTop: "25%",
   },
   backButton: {
-    height: height * 0.01,
     justifyContent: "center",
-  },
-  backButtonText: {
-    color: "white",
-    fontSize: width * 0.1,
   },
   text: {
     color: "white",
-    fontSize: width * 0.05,
     textAlign: "center",
   },
   forgotPasswordText: {
     color: "#47065B",
-    fontSize: width*0.03,
+    fontSize: 12,
     textDecorationLine: "underline",
     marginBottom: "190%", 
   },

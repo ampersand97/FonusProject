@@ -17,7 +17,7 @@ export default function MainScreen() {
       </View>
       <View style={styles.viewText}>
         <Text style={styles.text}>
-          Precisamos fazer algumas perguntas sobre a criança, para assim, selecionarmos os exercícios certos.
+          Precisamos fazer algumas perguntas sobre o seu filho, para assim podermos selecionar os exercícios certos.
         </Text>
       </View>
       <View style={styles.viewButton}>
@@ -44,9 +44,9 @@ const styles = StyleSheet.create({
   },
   titleText: {
     color: "white",
-    fontSize: width * 0.15,
+    fontSize: 64,
     fontWeight: "bold",
-    textAlign:"center"
+    textAlign: "center",
   },
   viewText: {
     width: "80%",
@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
   },
   text: {
     color: "white",
-    fontSize: width * 0.05,
+    fontSize: 20,
     textAlign: "center",
   },
   viewButton: {
@@ -64,7 +64,7 @@ const styles = StyleSheet.create({
   },
   button2: {
     width: "80%",
-    height: height * 0.07,
+    height: "250%",
     borderRadius: 25,
     backgroundColor: "white",
     justifyContent: "center",
@@ -75,17 +75,17 @@ const styles = StyleSheet.create({
     alignItems: "flex-start",
   },
   backButton: {
-    height: height * 0.01,
+    height: "30%",
     justifyContent: "center",
   },
   backButtonText: {
     color: "white",
-    fontSize: width * 0.1,
+    fontSize: 36,
   },
   textButton2: {
     color: "#47065B",
     fontWeight: "bold",
     textAlign: "center",
-    fontSize: width * 0.04,
+    fontSize: 16,
   },
 });

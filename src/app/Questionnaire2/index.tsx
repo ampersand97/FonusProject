@@ -191,20 +191,13 @@ const styles = StyleSheet.create({
   },
   title: {
     color: "#47065B",
-    fontSize: width * 0.09,
+    fontSize: 36,
   },
   inputContainer: {
     width: "100%",
     alignItems: "center",
     marginTop: "-40%",
     marginBottom: "20%",
-  },
-  inputText: {
-    width: width * 0.8,
-    height: height * 0.06,
-    marginTop: "5%",
-    marginBottom: "5%",
-    backgroundColor: "#C6C6C6",
   },
   viewButton: {
     width: "100%",
@@ -215,7 +208,7 @@ const styles = StyleSheet.create({
   },
   button1: {
     width: "25%",
-    height: height * 0.1,
+    height: "50%",
     backgroundColor: "#47065B",
     borderRadius: 25,
     justifyContent: "center",
@@ -232,25 +225,25 @@ const styles = StyleSheet.create({
   viewBackButton: {
     width: "90%",
     alignItems: "flex-start",
-    marginTop: "50%",
+    marginTop: "35%",
     marginBottom: "25%",
   },
   backButton: {
-    height: height * 0.01,
+    height: "20%",
     justifyContent: "center",
   },
   backButtonText: {
-    color: "white",
-    fontSize: width * 0.1,
+    color: "black",
+    fontSize: 36,
   },
   text: {
     color: "#47065B",
-    fontSize: width * 0.035,
+    fontSize: 16,
     textAlign: "center",
     marginTop: "-75%",
   },
   smallText: {
-    fontSize: width * 0.035,
+    fontSize: 12,
     textAlign: "center",
     marginTop: "-50%",
   },

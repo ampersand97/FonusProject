@@ -36,7 +36,7 @@ export default function ForgotPasswordScreen() {
         <Text style={styles.title}>Redefinir Senha</Text>
       </View>
       <View style={{margin:20,alignItems:"center", justifyContent:"center"}}>
-        <Text style={{fontSize:width*0.04}}>Por favor, digite seu e-mail:</Text>
+        <Text style={styles.text}>Por favor, digite seu e-mail:</Text>
       </View>
       <View style={styles.inputContainer}>
         <TextInput
@@ -84,12 +84,11 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   viewTitle: {
-    marginTop: "40%",
+    marginTop: "50%",
   },
   title: {
     color: "#47065B",
-    fontSize: width * 0.1,
-    fontWeight: "bold",
+    fontSize: 36,
   },
   inputContainer: {
     width: "100%",
@@ -98,25 +97,23 @@ const styles = StyleSheet.create({
     marginBottom: "20%",
   },
   inputText: {
-    width: width * 0.8,
-    height: height * 0.06,
-    marginTop: "5%",
-    marginBottom: "5%",
+    width: "80%",
+    marginTop: "-20%",
     backgroundColor: "#C6C6C6",
   },
   viewButton: {
     width: "100%",
     alignItems: "center",
-    marginBottom: "20%",
+    marginBottom: "30%",
   },
   button1: {
     width: "80%",
-    height: height * 0.07,
+    height: "50%",
     backgroundColor: "#47065B",
     borderRadius: 25,
     justifyContent: "center",
     alignItems: "center",
-    marginTop: "5%",
+    marginTop: "-20%",
     marginBottom: "40%",
   },
   buttonText: {
@@ -127,19 +124,14 @@ const styles = StyleSheet.create({
   viewBackButton: {
     width: "90%",
     alignItems: "flex-start",
-    marginTop: "20%",
+    marginTop: "-15%",
   },
   backButton: {
-    height: height * 0.01,
+    height: "10%",
     justifyContent: "center",
   },
-  backButtonText: {
-    color: "white",
-    fontSize: width * 0.1,
-  },
   text: {
-    color: "white",
-    fontSize: width * 0.05,
+    fontSize: 16,
     textAlign: "center",
   },
 });

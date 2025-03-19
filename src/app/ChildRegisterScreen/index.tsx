@@ -19,7 +19,7 @@ export default function ChildRegisterScreen() {
       alert("Preencha os campos antes de prosseguir.");
       return;
     } else {
-      await router.push('/TreatmentQuestion')
+      router.push('/TreatmentQuestion')
     }
   };
 
@@ -92,7 +92,7 @@ export default function ChildRegisterScreen() {
             ref={pickerRef}
             selectedValue={gender}
             onValueChange={(itemValue)=>{
-                setGender(itemValue)
+              setGender(itemValue)
             }}
             style={styles.button2}
             >
@@ -120,14 +120,14 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   viewTitle: {
-    marginTop: "60%",
+    marginTop: "50%",
   },
   title: {
     textAlign: "center",
     justifyContent: "center",
     alignItems: "center",
     color: "#47065B",
-    fontSize: width * 0.05,
+    fontSize: 24,
     fontWeight: "bold",
   },
   inputContainer: {
@@ -137,8 +137,8 @@ const styles = StyleSheet.create({
     marginBottom: "10%",
   },
   inputText: {
-    width: width * 0.8,
-    height: height * 0.06,
+    width: "80%",
+    height: "20%",
     marginTop: 10,
     backgroundColor: "#C6C6C6",
   },
@@ -149,7 +149,7 @@ const styles = StyleSheet.create({
   },
   button1: {
     width: "80%",
-    height: height * 0.07,
+    height: "15%",
     backgroundColor: "#47065B",
     borderRadius: 25,
     justifyContent: "center",
@@ -157,9 +157,9 @@ const styles = StyleSheet.create({
     marginBottom: "80%", 
   },
   button2: {
-    width: width * 0.8,
-    height: height * 0.06,
-    marginTop: 15,
+    width: "80%",
+    height: "100%",
+    marginTop: "5%",
     backgroundColor: "#C6C6C6",
     borderRadius: 10,
     justifyContent: "center",
@@ -173,19 +173,14 @@ const styles = StyleSheet.create({
   viewBackButton: {
     width: "90%",
     alignItems: "flex-start",
-    marginTop: "55%",
+    marginTop: "35%",
   },
   backButton: {
-    height: height * 0.01,
+    height: "25%",
     justifyContent: "center",
   },
-  backButtonText: {
-    color: "white",
-    fontSize: width * 0.1,
-  },
   text: {
-    color: "white",
-    fontSize: width * 0.05,
-    textAlign: "center",
+    color: "black",
+    fontSize: 36,
   },
 });

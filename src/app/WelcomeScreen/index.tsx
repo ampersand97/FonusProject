@@ -41,10 +41,10 @@ const styles = StyleSheet.create({
   },
   titleText1: {
     color: "white",
-    fontSize: width * 0.06,
+    fontSize: 20,
   },
   titleText2: {
-    fontSize: width * 0.08,
+    fontSize: 32,
     fontWeight: "bold",
     color: "#A425C4",
   },
@@ -65,7 +65,7 @@ const styles = StyleSheet.create({
   },
   text: {
     color: "white",
-    fontSize: width * 0.04,
+    fontSize: 16,
     textAlign: "center",
   },
   viewButton: {
@@ -75,7 +75,7 @@ const styles = StyleSheet.create({
   },
   button: {
     width: "80%",
-    height: height * 0.07,
+    height: "250%",
     backgroundColor:"#47065B",
     borderRadius: 25,
     borderColor:"white",

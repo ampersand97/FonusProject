@@ -152,12 +152,12 @@ const styles = StyleSheet.create({
   },
   title: {
     color: "#47065B",
-    fontSize: width * 0.1,
+    fontSize: 36,
     fontWeight: "bold",
   },
   text: {
     color: "white",
-    fontSize: width * 0.05,
+    fontSize: 12,
     textAlign: "center",
   },
   inputContainer: {
@@ -167,8 +167,7 @@ const styles = StyleSheet.create({
     marginBottom: "10%",
   },
   inputText: {
-    width: width * 0.8,
-    height: height * 0.06,
+    width: "80%",
     marginTop: 10,
     backgroundColor: "#C6C6C6",
   },
@@ -179,7 +178,7 @@ const styles = StyleSheet.create({
   },
   button1: {
     width: "80%",
-    height: height * 0.07,
+    height: "25%",
     backgroundColor: "#47065B",
     borderRadius: 25,
     justifyContent: "center",
@@ -194,14 +193,10 @@ const styles = StyleSheet.create({
   viewBackButton: {
     width: "90%",
     alignItems: "flex-start",
-    marginTop: "30%",
+    marginTop: "0%",
   },
   backButton: {
-    height: height * 0.01,
+    height: "10%",
     justifyContent: "center",
-  },
-  backButtonText: {
-    color: "white",
-    fontSize: width * 0.1,
   },
 });

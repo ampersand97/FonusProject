@@ -9,7 +9,7 @@ export default function Welcome2Screen() {
     <View style={styles.container}>
       <View style={styles.viewBackButton}>
         <TouchableOpacity style={styles.backButton} activeOpacity={0.6} onPress={() => router.push('/WelcomeScreen')}>
-          <Text style={styles.backButtonText}><MaterialCommunityIcons name="chevron-left" size={36} color="white" /></Text>
+          <Text style={styles.text}><MaterialCommunityIcons name="chevron-left" size={36} color="white" /></Text>
         </TouchableOpacity>
       </View>
       <View style={styles.titleTextView}>
@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
   },
   titleText: {
     color: "white",
-    fontSize: width * 0.1,
+    fontSize: 50,
     fontWeight: "bold",
   },
   viewText: {
@@ -56,17 +56,17 @@ const styles = StyleSheet.create({
   },
   text: {
     color: "white",
-    fontSize: width * 0.05,
+    fontSize: 20,
     textAlign: "center",
   },
   viewButton: {
     width: "100%",
     alignItems: "center",
-    marginBottom: "10%",
+    marginBottom: "20%",
   },
   button1: {
     width: "80%",
-    height: height * 0.07,
+    height: "90%",
     marginBottom: 20,
     backgroundColor: "#47065B",
     borderRadius: 25,
@@ -77,7 +77,7 @@ const styles = StyleSheet.create({
   },
   button2: {
     width: "80%",
-    height: height * 0.07,
+    height: "90%",
     borderRadius: 25,
     backgroundColor: "white",
     justifyContent: "center",
@@ -88,23 +88,19 @@ const styles = StyleSheet.create({
     alignItems: "flex-start",
   },
   backButton: {
-    height: height * 0.01,
+    height: "10%",
     justifyContent: "center",
-  },
-  backButtonText: {
-    color: "white",
-    fontSize: width * 0.1,
   },
   textButton1: {
     color: "white",
     fontWeight: "bold",
-    fontSize: width * 0.04,
+    fontSize: 16,
     textAlign: "center",
   },
   textButton2: {
     color: "#47065B",
     fontWeight: "bold",
+    fontSize: 16,
     textAlign: "center",
-    fontSize: width * 0.04,
   },
 });

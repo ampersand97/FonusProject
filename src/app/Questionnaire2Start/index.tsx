@@ -13,7 +13,7 @@ export default function Questionnaire2Start() {
         </TouchableOpacity>
       </View>
       <View style={styles.titleTextView}>
-        <Text style={styles.titleText}>Responda o questionário a seguir sobre seu filho, para finalizarmos.</Text>
+        <Text style={styles.titleText}>Para finalizarmos, responda o questionário sobre seu filho a seguir.</Text>
       </View>
       <View style={styles.viewButton}>
         <TouchableOpacity style={styles.button2} activeOpacity={0.6} onPress={() => router.push('/Questionnaire2')}>
@@ -40,18 +40,13 @@ const styles = StyleSheet.create({
   },
   titleText: {
     color: "white",
-    fontSize: width * 0.05,
+    fontSize: 24,
     fontWeight: "bold",
     textAlign:"center"
   },
   viewText: {
     width: "80%",
     alignItems: "center",
-  },
-  text: {
-    color: "white",
-    fontSize: width * 0.05,
-    textAlign: "center",
   },
   viewButton: {
     width: "100%",
@@ -63,16 +58,16 @@ const styles = StyleSheet.create({
     alignItems: "flex-start",
   },
   backButton: {
-    height: height * 0.01,
+    height: "20%",
     justifyContent: "center",
   },
   backButtonText: {
     color: "white",
-    fontSize: width * 0.1,
+    fontSize: 36,
   },
   button2: {
     width: "80%",
-    height: height * 0.07,
+    height: "250%",
     borderRadius: 25,
     backgroundColor: "white",
     justifyContent: "center",
@@ -82,6 +77,6 @@ const styles = StyleSheet.create({
     color: "#47065B",
     fontWeight: "bold",
     textAlign: "center",
-    fontSize: width * 0.04,
+    fontSize: 16,
   },
 });
