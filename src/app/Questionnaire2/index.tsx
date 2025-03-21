@@ -28,6 +28,7 @@ export default function Questionnaire2() {
     switch (question) {
       case 0:
         router.push('/TreatmentQuestion')
+        break;
       case 1:
         setTopic(1);
         setTopicsLeft(1);
@@ -74,7 +75,7 @@ export default function Questionnaire2() {
         setQuestionText("Ele consegue acompanhar falas?");
         break;
       case 10:
-        router.push('/AnswerGathering');
+        router.push('/ReportScreen');
         break;
       default:
         setQuestionText("ERRO");
@@ -194,7 +195,9 @@ const styles = StyleSheet.create({
   button1: {
     width: "25%",
     height: "50%",
-    backgroundColor: "#47065B",
+    borderColor: "#47065B",
+    borderWidth: 2,
+    backgroundColor: "white",
     borderRadius: 25,
     justifyContent: "center",
     alignItems: "center",
@@ -203,7 +206,7 @@ const styles = StyleSheet.create({
     marginBottom: "40%",
   },
   buttonText: {
-    color: "white",
+    color: "#47065B",
     fontSize: 16,
     fontWeight: "bold",
   },

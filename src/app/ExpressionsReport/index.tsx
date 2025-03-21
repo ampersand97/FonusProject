@@ -4,21 +4,23 @@ import { MaterialCommunityIcons } from "@expo/vector-icons";
 
 const { width, height } = Dimensions.get('window');
 
-export default function AnswerGathering() {
+export default function ExpressionsReport() {
   return (
     <View style={styles.container}>
       <View style={styles.viewBackButton}>
-        <TouchableOpacity style={styles.backButton} activeOpacity={0.6} onPress={() => router.push('/TreatmentQuestion')}>
+        <TouchableOpacity style={styles.backButton} activeOpacity={0.6} onPress={() => router.push('/ReportScreen')}>
           <Text style={styles.backButtonText}><MaterialCommunityIcons name="chevron-left" size={36} color="white" /></Text>
         </TouchableOpacity>
       </View>
       <View style={styles.titleTextView}>
-        <Text style={styles.titleText}>Respostas Recebidas</Text>
+        <Text style={styles.titleText}>Expressões</Text>
       </View>
-      <View style={styles.viewButton}>
-        <TouchableOpacity style={styles.button2} activeOpacity={0.6} onPress={() => router.push('/ReportScreen')}>
-          <Text style={styles.textButton2}>Avançar</Text>
-        </TouchableOpacity>
+      <View style={styles.viewText}>
+          <Text style={styles.text}>
+          A expressão infantil refere-se à forma como as crianças comunicam sentimentos, pensamentos e necessidades, seja por meio da fala, gestos, expressões faciais ou desenhos.
+          Desde cedo, os bebês começam a se expressar através do choro, sorrisos e vocalizações.
+          Com o crescimento, o vocabulário se expande e a comunicação verbal se torna mais complexa.
+          </Text>
       </View>
     </View>
   );

@@ -24,6 +24,7 @@ export default function Questionnaire3() {
     switch (question) {
       case 0:
         router.push('/TreatmentQuestion')
+        break;
       case 1:
         setQuestionText("O fonoaudiólogo conseguiu dizer o que ele tinha?");
         break;
@@ -34,7 +35,7 @@ export default function Questionnaire3() {
         setQuestionText("A socialização dele mudou de alguma forma desde que parou a terapia?");
         break;
       case 4:
-        router.push('/AnswerGathering');
+        router.push('/ReportScreen');
         break;
       default:
         setQuestionText("");
@@ -76,8 +77,6 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
   },
-  viewTitle: {
-  },
   title: {
     color: "#47065B",
     fontSize: 36,
@@ -98,24 +97,24 @@ const styles = StyleSheet.create({
   button1: {
     width: "25%",
     height: "50%",
-    backgroundColor: "#47065B",
+    borderColor: "#47065B",
+    borderWidth: 2,
+    backgroundColor: "white",
     borderRadius: 25,
     justifyContent: "center",
     alignItems: "center",
-    marginTop: "5%",
     marginHorizontal: "12%",
     marginBottom: "40%",
   },
   buttonText: {
-    color: "white",
+    color: "#47065B",
     fontSize: 16,
     fontWeight: "bold",
   },
   viewBackButton: {
     width: "90%",
     alignItems: "flex-start",
-    marginTop: "35%",
-    marginBottom: "25%",
+    marginTop: "40%",
   },
   backButton: {
     height: "20%",
@@ -129,24 +128,22 @@ const styles = StyleSheet.create({
     color: "#47065B",
     fontSize: 16,
     textAlign: "center",
-    marginTop: "-75%",
+    marginTop: "20%",
   },
   smallText: {
     fontSize: 12,
     textAlign: "center",
-    marginTop: "-50%",
   },
   viewText: {
     width: "80%",
     alignItems: "center",
-    marginTop: "40%",
   },
   viewImage: {
     justifyContent: "center",
     alignItems: "center",
     width: "100%",
     height: "60%",
-    marginTop: "-75%"
+    marginTop: "-30%",
   },
   image: {
     resizeMode: "contain",

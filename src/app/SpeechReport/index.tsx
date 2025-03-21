@@ -4,21 +4,24 @@ import { MaterialCommunityIcons } from "@expo/vector-icons";
 
 const { width, height } = Dimensions.get('window');
 
-export default function AnswerGathering() {
+export default function SpeechReport() {
   return (
     <View style={styles.container}>
       <View style={styles.viewBackButton}>
-        <TouchableOpacity style={styles.backButton} activeOpacity={0.6} onPress={() => router.push('/TreatmentQuestion')}>
+        <TouchableOpacity style={styles.backButton} activeOpacity={0.6} onPress={() => router.push('/ReportScreen')}>
           <Text style={styles.backButtonText}><MaterialCommunityIcons name="chevron-left" size={36} color="white" /></Text>
         </TouchableOpacity>
       </View>
       <View style={styles.titleTextView}>
-        <Text style={styles.titleText}>Respostas Recebidas</Text>
+        <Text style={styles.titleText}>Fala</Text>
       </View>
-      <View style={styles.viewButton}>
-        <TouchableOpacity style={styles.button2} activeOpacity={0.6} onPress={() => router.push('/ReportScreen')}>
-          <Text style={styles.textButton2}>Avançar</Text>
-        </TouchableOpacity>
+      <View style={styles.viewText}>
+          <Text style={styles.text}>
+          A fala infantil é um dos principais marcos do desenvolvimento da comunicação e envolve a habilidade de articular sons, palavras e frases para se expressar.
+          O processo começa com balbucios nos primeiros meses, evoluindo para palavras simples por volta de um ano e frases mais complexas entre os dois e três anos.
+          O ritmo desse desenvolvimento pode variar, mas dificuldades na pronúncia, fluência ou formação de frases podem indicar a necessidade de avaliação fonoaudiológica.
+          A interação social, leitura e estímulo verbal em casa são fundamentais para o desenvolvimento saudável da fala.
+          </Text>
       </View>
     </View>
   );

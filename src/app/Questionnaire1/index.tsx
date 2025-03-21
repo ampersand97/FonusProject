@@ -13,7 +13,7 @@ export default function Questionnaire1() {
   const [conditions, setConditions] = useState();
   const pickerRef = useRef<Picker<undefined>>(null);
 
- return(
+  return(
     <View style={styles.container}>
       <View style={styles.viewBackButton}>
         <TouchableOpacity style={styles.backButton} activeOpacity={0.6} onPress={() => router.push('/TreatmentQuestion')}>
@@ -33,9 +33,14 @@ export default function Questionnaire1() {
         }}
         style={styles.button2}
         >
-        <Picker.Item label='PLACEHOLDER1' value={'P1'}/>
-        <Picker.Item label='PLACEHOLDER2' value={'P2'}/>
-        <Picker.Item label='PLACEHOLDER3' value={'P3'}/>
+        <Picker.Item label='Atraso na aquisição de palavras' value={'D_AAP'}/>
+        <Picker.Item label='Dificuldades com a articulação' value={'D_DART'}/>
+        <Picker.Item label='Problemas de compreensão' value={'D_PC'}/>
+        <Picker.Item label='Dificuldade com a gramática' value={'D_DG'}/>
+        <Picker.Item label='Alterações fonológicas' value={'D_AFON'}/>
+        <Picker.Item label='Problemas de fluência' value={'D_PF'}/>
+        <Picker.Item label='Deficiência auditiva' value={'D_DAUD'}/>
+        <Picker.Item label='Dificuldades de socialização' value={'D_DS'}/>
     </Picker>
       <Text style={styles.text}>Agora, selecione se ele possui alguma dessas condições:</Text>
     <Picker
@@ -46,13 +51,18 @@ export default function Questionnaire1() {
         }}
         style={styles.button2}
     >
-        <Picker.Item label='PLACEHOLDER4' value={'P4'}/>
-        <Picker.Item label='PLACEHOLDER5' value={'P5'}/>
-        <Picker.Item label='PLACEHOLDER6' value={'P6'}/>
+        <Picker.Item label=' Atraso na Aquisição da Linguagem (AAL)' value={'C_AAL'}/>
+        <Picker.Item label='Hipernasalidade' value={'C_HN'}/>
+        <Picker.Item label='Apraxia de Fala na Infância (AFI)' value={'C_AFI'}/>
+        <Picker.Item label='Dislexia' value={'C_DSLX'}/>
+        <Picker.Item label='Transtorno do Espectro Autista (TEA)' value={'C_TEA'}/>
+        <Picker.Item label='Distúrbio Fonológico' value={'C_DF'}/>
+        <Picker.Item label='Hipotonia Orofacial' value={'C_HO'}/>
+        <Picker.Item label='Gagueira Infantil (Disfluência)' value={'C_GI'}/>
     </Picker>
      </View>
      <View style={styles.viewButton}>
-        <TouchableOpacity style={styles.button1} onPress={() => router.push('/AnswerGathering')}>
+        <TouchableOpacity style={styles.button1} onPress={() => router.push('/ReportScreen')}>
           <Text style={styles.buttonText}>Avançar</Text>
         </TouchableOpacity>
       </View>

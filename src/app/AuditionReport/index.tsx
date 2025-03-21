@@ -4,21 +4,23 @@ import { MaterialCommunityIcons } from "@expo/vector-icons";
 
 const { width, height } = Dimensions.get('window');
 
-export default function AnswerGathering() {
+export default function AuditionReport() {
   return (
     <View style={styles.container}>
       <View style={styles.viewBackButton}>
-        <TouchableOpacity style={styles.backButton} activeOpacity={0.6} onPress={() => router.push('/TreatmentQuestion')}>
+        <TouchableOpacity style={styles.backButton} activeOpacity={0.6} onPress={() => router.push('/ReportScreen')}>
           <Text style={styles.backButtonText}><MaterialCommunityIcons name="chevron-left" size={36} color="white" /></Text>
         </TouchableOpacity>
       </View>
       <View style={styles.titleTextView}>
-        <Text style={styles.titleText}>Respostas Recebidas</Text>
+        <Text style={styles.titleText}>Audição</Text>
       </View>
-      <View style={styles.viewButton}>
-        <TouchableOpacity style={styles.button2} activeOpacity={0.6} onPress={() => router.push('/ReportScreen')}>
-          <Text style={styles.textButton2}>Avançar</Text>
-        </TouchableOpacity>
+      <View style={styles.viewText}>
+          <Text style={styles.text}>
+            A audição infantil desempenha um papel crucial no desenvolvimento da linguagem, comunicação e aprendizado.
+            Desde o nascimento, os bebês começam a captar sons ao seu redor, incluindo vozes e ruídos do ambiente.
+            Qualquer alteração auditiva nessa fase pode impactar o desenvolvimento da fala e habilidades sociais.
+          </Text>
       </View>
     </View>
   );
